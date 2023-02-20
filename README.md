@@ -1,2 +1,2 @@
 # rabbit
-a tool that translate c# to java.
+a tool that translate c# to java/kotlin.
