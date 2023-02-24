@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AttributeInfo {
+public class AttributeInfo extends CommentElement {
 
     private NameInfo name;
 

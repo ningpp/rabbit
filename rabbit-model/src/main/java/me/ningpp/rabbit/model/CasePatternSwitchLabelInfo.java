@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class CasePatternSwitchLabelInfo {
+public class CasePatternSwitchLabelInfo extends CommentElement {
 
     private String keyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SwitchLabelInfo {
+public class SwitchLabelInfo extends CommentElement {
 
     private CasePatternSwitchLabelInfo casePatternSwitchLabelInfo;
 

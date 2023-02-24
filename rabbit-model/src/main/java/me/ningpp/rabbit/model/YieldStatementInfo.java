@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class YieldStatementInfo {
+public class YieldStatementInfo extends SourceLocation {
 
     private String yieldKeyword;
 

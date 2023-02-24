@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class UnaryPatternInfo {
+public class UnaryPatternInfo extends CommentElement {
 
     private String operatorToken;
 

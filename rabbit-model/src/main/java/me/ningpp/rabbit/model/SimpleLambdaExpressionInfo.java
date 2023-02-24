@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SimpleLambdaExpressionInfo {
+public class SimpleLambdaExpressionInfo extends CommentElement {
 
     private String asyncKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class JoinIntoClauseInfo {
+public class JoinIntoClauseInfo extends CommentElement {
 
     private String intoKeyword;
 

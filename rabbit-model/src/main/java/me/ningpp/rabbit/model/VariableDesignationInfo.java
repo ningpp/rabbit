@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class VariableDesignationInfo {
+public class VariableDesignationInfo extends CommentElement {
 
     private SingleVariableDesignationInfo singleVariableDesignationInfo;
 

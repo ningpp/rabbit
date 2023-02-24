@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AttributeListInfo {
+public class AttributeListInfo extends CommentElement {
 
     private String openBracketToken;
 

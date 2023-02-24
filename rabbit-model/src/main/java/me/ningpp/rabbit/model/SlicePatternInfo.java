@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SlicePatternInfo {
+public class SlicePatternInfo extends CommentElement {
 
     private String dotDotToken;
 

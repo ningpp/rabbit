@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class LabeledStatementInfo {
+public class LabeledStatementInfo extends SourceLocation {
 
     private String identifier;
 

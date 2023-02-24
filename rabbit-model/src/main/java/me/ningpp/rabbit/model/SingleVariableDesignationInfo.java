@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SingleVariableDesignationInfo {
+public class SingleVariableDesignationInfo extends CommentElement {
 
     private String identifier;
 

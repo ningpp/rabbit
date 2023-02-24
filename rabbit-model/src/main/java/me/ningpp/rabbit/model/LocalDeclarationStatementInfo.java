@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class LocalDeclarationStatementInfo {
+public class LocalDeclarationStatementInfo extends SourceLocation {
 
     private boolean isConst;
 

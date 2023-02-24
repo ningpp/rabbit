@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AliasQualifiedNameInfo {
+public class AliasQualifiedNameInfo extends CommentElement {
 
     private IdentifierNameInfo alias;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ParenthesizedVariableDesignationInfo {
+public class ParenthesizedVariableDesignationInfo extends CommentElement {
 
     private List<VariableDesignationInfo> variables;
 

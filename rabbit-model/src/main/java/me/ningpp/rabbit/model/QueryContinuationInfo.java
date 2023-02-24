@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class QueryContinuationInfo {
+public class QueryContinuationInfo extends CommentElement {
 
     private String intoKeyword;
 

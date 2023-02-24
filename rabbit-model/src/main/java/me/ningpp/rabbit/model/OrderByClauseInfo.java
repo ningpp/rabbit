@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class OrderByClauseInfo {
+public class OrderByClauseInfo extends CommentElement {
 
     private String orderByKeyword;
 

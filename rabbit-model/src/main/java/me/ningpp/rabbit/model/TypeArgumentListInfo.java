@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class TypeArgumentListInfo {
+public class TypeArgumentListInfo extends CommentElement {
 
     private String lessThanToken;
 

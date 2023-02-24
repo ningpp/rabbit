@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class FunctionPointerTypeInfo {
+public class FunctionPointerTypeInfo extends CommentElement {
 
     private String delegateKeyword;
 

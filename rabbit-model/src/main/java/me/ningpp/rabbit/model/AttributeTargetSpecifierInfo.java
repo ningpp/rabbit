@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AttributeTargetSpecifierInfo {
+public class AttributeTargetSpecifierInfo extends CommentElement {
 
     private String identifier;
 

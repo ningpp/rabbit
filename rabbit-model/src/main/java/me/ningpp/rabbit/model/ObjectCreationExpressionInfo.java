@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ObjectCreationExpressionInfo {
+public class ObjectCreationExpressionInfo extends CommentElement {
 
     private String newKeyword;
 

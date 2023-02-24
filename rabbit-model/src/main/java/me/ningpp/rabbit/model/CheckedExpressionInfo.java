@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class CheckedExpressionInfo {
+public class CheckedExpressionInfo extends CommentElement {
 
     private String keyword;
 

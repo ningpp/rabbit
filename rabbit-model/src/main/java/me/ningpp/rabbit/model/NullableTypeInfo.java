@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class NullableTypeInfo {
+public class NullableTypeInfo extends CommentElement {
 
     private TypeInfo elementType;
 

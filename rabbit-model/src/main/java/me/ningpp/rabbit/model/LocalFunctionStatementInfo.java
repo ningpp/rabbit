@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class LocalFunctionStatementInfo {
+public class LocalFunctionStatementInfo extends SourceLocation {
 
     private List<String> modifiers;
 

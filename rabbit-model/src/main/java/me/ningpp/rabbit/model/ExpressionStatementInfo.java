@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ExpressionStatementInfo {
+public class ExpressionStatementInfo extends SourceLocation {
 
     private boolean allowsAnyExpression;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AssignmentExpressionInfo {
+public class AssignmentExpressionInfo extends CommentElement {
 
     private ExpressionInfo left;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class QueryBodyInfo {
+public class QueryBodyInfo extends CommentElement {
 
     private List<QueryClauseInfo> clauses;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class WhenClauseInfo {
+public class WhenClauseInfo extends CommentElement {
 
     private String whenKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class RelationalPatternInfo {
+public class RelationalPatternInfo extends CommentElement {
 
     private String operatorToken;
 

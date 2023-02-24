@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ConstructorConstraintInfo {
+public class ConstructorConstraintInfo extends CommentElement {
 
     private String newKeyword;
 

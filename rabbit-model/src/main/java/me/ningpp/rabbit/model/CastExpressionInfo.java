@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class CastExpressionInfo {
+public class CastExpressionInfo extends CommentElement {
 
     private TypeInfo type;
 

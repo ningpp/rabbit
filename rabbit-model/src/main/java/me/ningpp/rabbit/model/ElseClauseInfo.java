@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ElseClauseInfo {
+public class ElseClauseInfo extends CommentElement {
 
     private String elseKeyword;
 

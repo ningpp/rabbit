@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class BlockInfo {
+public class BlockInfo extends SourceLocation {
 
     private List<StatementInfo> statements;
 

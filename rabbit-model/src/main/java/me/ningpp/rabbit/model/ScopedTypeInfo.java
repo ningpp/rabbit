@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ScopedTypeInfo {
+public class ScopedTypeInfo extends CommentElement {
 
     private String scopedKeyword;
 

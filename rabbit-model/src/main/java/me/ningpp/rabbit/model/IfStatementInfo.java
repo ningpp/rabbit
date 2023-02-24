@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class IfStatementInfo {
+public class IfStatementInfo extends SourceLocation {
 
     private String ifKeyword;
 

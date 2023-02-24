@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ExpressionInfo {
+public class ExpressionInfo extends CommentElement {
 
     private AnonymousMethodExpressionInfo anonymousMethodExpressionInfo;
 

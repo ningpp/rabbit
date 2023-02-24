@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class WhereClauseInfo {
+public class WhereClauseInfo extends CommentElement {
 
     private String whereKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class PositionalPatternClauseInfo {
+public class PositionalPatternClauseInfo extends CommentElement {
 
     private List<SubpatternInfo> subpatterns;
 

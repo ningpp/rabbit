@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ParenthesizedExpressionInfo {
+public class ParenthesizedExpressionInfo extends CommentElement {
 
     private ExpressionInfo expression;
 

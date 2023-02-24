@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class BaseExpressionColonInfo {
+public class BaseExpressionColonInfo extends CommentElement {
 
     private NameColonInfo nameColonInfo;
 

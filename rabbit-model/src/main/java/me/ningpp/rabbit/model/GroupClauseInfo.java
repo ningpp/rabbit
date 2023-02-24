@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class GroupClauseInfo {
+public class GroupClauseInfo extends CommentElement {
 
     private String groupKeyword;
 

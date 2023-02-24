@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SimpleBaseTypeInfo {
+public class SimpleBaseTypeInfo extends CommentElement {
 
     private TypeInfo type;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class IncompleteMemberInfo {
+public class IncompleteMemberInfo extends CommentElement {
 
     private List<String> modifiers;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SwitchExpressionInfo {
+public class SwitchExpressionInfo extends CommentElement {
 
     private ExpressionInfo governingExpression;
 

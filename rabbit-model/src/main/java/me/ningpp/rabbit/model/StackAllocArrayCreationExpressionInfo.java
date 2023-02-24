@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class StackAllocArrayCreationExpressionInfo {
+public class StackAllocArrayCreationExpressionInfo extends CommentElement {
 
     private String stackAllocKeyword;
 

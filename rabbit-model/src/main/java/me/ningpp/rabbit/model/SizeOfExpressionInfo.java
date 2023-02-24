@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SizeOfExpressionInfo {
+public class SizeOfExpressionInfo extends CommentElement {
 
     private String keyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class DeclarationPatternInfo {
+public class DeclarationPatternInfo extends CommentElement {
 
     private TypeInfo type;
 

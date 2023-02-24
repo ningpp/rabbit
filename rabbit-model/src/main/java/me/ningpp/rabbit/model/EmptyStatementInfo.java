@@ -2,5 +2,5 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class EmptyStatementInfo {
+public class EmptyStatementInfo extends SourceLocation {
 }

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ThisExpressionInfo {
+public class ThisExpressionInfo extends CommentElement {
 
     private String token;
 

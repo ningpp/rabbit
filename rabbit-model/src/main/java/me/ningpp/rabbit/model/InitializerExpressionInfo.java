@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class InitializerExpressionInfo {
+public class InitializerExpressionInfo extends CommentElement {
 
     private List<ExpressionInfo> expressions;
 

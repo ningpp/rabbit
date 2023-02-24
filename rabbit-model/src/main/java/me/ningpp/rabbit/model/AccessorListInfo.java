@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AccessorListInfo {
+public class AccessorListInfo extends CommentElement {
 
     private List<AccessorDeclarationInfo> accessors;
 

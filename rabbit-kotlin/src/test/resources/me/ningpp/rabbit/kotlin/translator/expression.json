@@ -1,0 +1,32 @@
+﻿{
+  "memberAccessExpressionInfo": {
+    "expression": {
+      "elementAccessExpressionInfo": {
+        "expression": {
+          "identifierNameInfo": {
+            "identifier": "rectangles"
+          }
+        },
+        "argumentList": {
+          "openBracketToken": "[",
+          "arguments": [
+            {
+              "expression": {
+                "literalExpressionInfo": {
+                  "token": "0"
+                }
+              }
+            }
+          ],
+          "closeBracketToken": "]"
+        }
+      }
+    },
+    "operatorToken": ".",
+    "name": {
+      "identifierNameInfo": {
+        "identifier": "Rectangle"
+      }
+    }
+  }
+}

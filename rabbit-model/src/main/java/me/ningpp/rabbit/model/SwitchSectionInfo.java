@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SwitchSectionInfo {
+public class SwitchSectionInfo extends CommentElement {
 
     private List<SwitchLabelInfo> labels;
 

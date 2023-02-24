@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AttributeArgumentListInfo {
+public class AttributeArgumentListInfo extends CommentElement {
 
     private List<AttributeArgumentInfo> arguments;
 

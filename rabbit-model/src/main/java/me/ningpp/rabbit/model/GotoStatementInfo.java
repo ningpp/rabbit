@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class GotoStatementInfo {
+public class GotoStatementInfo extends SourceLocation {
 
     private String gotoKeyword;
 

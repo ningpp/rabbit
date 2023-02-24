@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class IdentifierNameInfo {
+public class IdentifierNameInfo extends CommentElement {
 
     private String identifier;
 

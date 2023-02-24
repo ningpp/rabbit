@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ArrowExpressionClauseInfo {
+public class ArrowExpressionClauseInfo extends CommentElement {
 
     private String arrowToken;
 

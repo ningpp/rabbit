@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class QueryExpressionInfo {
+public class QueryExpressionInfo extends CommentElement {
 
     private FromClauseInfo fromClause;
 

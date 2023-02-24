@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ThrowExpressionInfo {
+public class ThrowExpressionInfo extends CommentElement {
 
     private String throwKeyword;
 

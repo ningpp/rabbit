@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class OmittedArraySizeExpressionInfo {
+public class OmittedArraySizeExpressionInfo extends CommentElement {
 
     private String omittedArraySizeExpressionToken;
 

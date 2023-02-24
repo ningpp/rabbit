@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class FunctionPointerUnmanagedCallingConventionListInfo {
+public class FunctionPointerUnmanagedCallingConventionListInfo extends CommentElement {
 
     private String openBracketToken;
 

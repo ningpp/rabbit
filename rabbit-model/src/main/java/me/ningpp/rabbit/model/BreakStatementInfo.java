@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class BreakStatementInfo {
+public class BreakStatementInfo extends SourceLocation {
 
     private String breakKeyword;
 

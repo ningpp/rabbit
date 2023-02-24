@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class DefaultSwitchLabelInfo {
+public class DefaultSwitchLabelInfo extends CommentElement {
 
     private String keyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SourceLocation {
+public class SourceLocation extends CommentElement {
 
     private int startLine;
 

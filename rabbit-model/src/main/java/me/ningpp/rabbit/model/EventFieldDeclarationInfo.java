@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class EventFieldDeclarationInfo {
+public class EventFieldDeclarationInfo extends CommentElement {
 
     private List<String> modifiers;
 

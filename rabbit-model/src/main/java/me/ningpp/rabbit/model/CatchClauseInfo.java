@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class CatchClauseInfo {
+public class CatchClauseInfo extends CommentElement {
 
     private String catchKeyword;
 

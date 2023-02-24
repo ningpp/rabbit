@@ -72,8 +72,8 @@
 
         <mavenVersion>3.6.0</mavenVersion>
         <commons-lang3.version>3.12.0</commons-lang3.version>
+        <jackson-bom.version>2.14.2</jackson-bom.version>
         <junit-jupiter.version>5.9.2</junit-jupiter.version>
-        <kotlinpoet.version>1.12.0</kotlinpoet.version>
         <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
@@ -86,12 +86,15 @@
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <mybatis.generator.version>1.4.2</mybatis.generator.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <versions-maven-plugin.version>2.12.0</versions-maven-plugin.version>
     </properties>
 
     <modules>
+        <module>rabbit-kotlin</module>
         <module>rabbit-model</module>
+        <module>rabbit-util</module>
     </modules>
 
     <dependencyManagement>
@@ -102,6 +105,13 @@
                 <version>${commons-lang3.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson-bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
                 <version>${junit-jupiter.version}</version>
@@ -109,9 +119,9 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.squareup</groupId>
-                <artifactId>kotlinpoet</artifactId>
-                <version>${kotlinpoet.version}</version>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis.generator.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

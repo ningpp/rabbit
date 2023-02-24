@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ForStatementInfo {
+public class ForStatementInfo extends SourceLocation {
 
     private String forKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class PostfixUnaryExpressionInfo {
+public class PostfixUnaryExpressionInfo extends CommentElement {
 
     private ExpressionInfo operand;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ElementAccessExpressionInfo {
+public class ElementAccessExpressionInfo extends CommentElement {
 
     private ExpressionInfo expression;
 

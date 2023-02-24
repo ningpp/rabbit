@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class TupleExpressionInfo {
+public class TupleExpressionInfo extends CommentElement {
 
     private List<ArgumentInfo> arguments;
 

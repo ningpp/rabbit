@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SelectClauseInfo {
+public class SelectClauseInfo extends CommentElement {
 
     private String selectKeyword;
 

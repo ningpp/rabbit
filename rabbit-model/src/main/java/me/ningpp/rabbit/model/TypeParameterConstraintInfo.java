@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class TypeParameterConstraintInfo {
+public class TypeParameterConstraintInfo extends CommentElement {
 
     private ClassOrStructConstraintInfo classOrStructConstraintInfo;
 

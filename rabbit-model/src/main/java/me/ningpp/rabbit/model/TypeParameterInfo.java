@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class TypeParameterInfo {
+public class TypeParameterInfo extends CommentElement {
 
     private String varianceKeyword;
 

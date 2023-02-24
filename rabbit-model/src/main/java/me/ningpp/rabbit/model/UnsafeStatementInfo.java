@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class UnsafeStatementInfo {
+public class UnsafeStatementInfo extends SourceLocation {
 
     private String unsafeKeyword;
 

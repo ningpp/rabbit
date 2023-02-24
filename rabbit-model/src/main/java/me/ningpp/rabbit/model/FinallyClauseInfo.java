@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class FinallyClauseInfo {
+public class FinallyClauseInfo extends CommentElement {
 
     private String finallyKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class RefExpressionInfo {
+public class RefExpressionInfo extends CommentElement {
 
     private String refKeyword;
 

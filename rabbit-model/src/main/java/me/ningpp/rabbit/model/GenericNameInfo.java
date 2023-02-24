@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class GenericNameInfo {
+public class GenericNameInfo extends CommentElement {
 
     private boolean isUnboundGenericName;
 

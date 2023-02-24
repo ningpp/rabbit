@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ArrayTypeInfo {
+public class ArrayTypeInfo extends CommentElement {
 
     private TypeInfo elementType;
 

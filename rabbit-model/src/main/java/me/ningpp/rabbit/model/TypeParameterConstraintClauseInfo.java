@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class TypeParameterConstraintClauseInfo {
+public class TypeParameterConstraintClauseInfo extends CommentElement {
 
     private String whereKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class PatternInfo {
+public class PatternInfo extends CommentElement {
 
     private DiscardPatternInfo discardPatternInfo;
 

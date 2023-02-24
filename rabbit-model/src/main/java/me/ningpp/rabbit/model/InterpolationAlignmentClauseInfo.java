@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class InterpolationAlignmentClauseInfo {
+public class InterpolationAlignmentClauseInfo extends CommentElement {
 
     private String commaToken;
 

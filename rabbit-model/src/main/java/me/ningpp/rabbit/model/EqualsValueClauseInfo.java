@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class EqualsValueClauseInfo {
+public class EqualsValueClauseInfo extends CommentElement {
 
     private String equalsToken;
 

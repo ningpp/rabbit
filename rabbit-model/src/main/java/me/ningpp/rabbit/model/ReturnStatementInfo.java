@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ReturnStatementInfo {
+public class ReturnStatementInfo extends SourceLocation {
 
     private String returnKeyword;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class SwitchStatementInfo {
+public class SwitchStatementInfo extends SourceLocation {
 
     private String switchKeyword;
 

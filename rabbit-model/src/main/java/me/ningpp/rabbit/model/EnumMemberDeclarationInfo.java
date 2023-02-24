@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class EnumMemberDeclarationInfo {
+public class EnumMemberDeclarationInfo extends CommentElement {
 
     private List<String> modifiers;
 

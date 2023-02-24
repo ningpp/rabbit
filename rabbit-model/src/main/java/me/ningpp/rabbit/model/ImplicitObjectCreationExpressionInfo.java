@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class ImplicitObjectCreationExpressionInfo {
+public class ImplicitObjectCreationExpressionInfo extends CommentElement {
 
     private String newKeyword;
 

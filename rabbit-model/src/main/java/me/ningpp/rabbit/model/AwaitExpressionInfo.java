@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class AwaitExpressionInfo {
+public class AwaitExpressionInfo extends CommentElement {
 
     private String awaitKeyword;
 

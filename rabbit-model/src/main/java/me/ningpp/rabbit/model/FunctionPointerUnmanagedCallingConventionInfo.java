@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class FunctionPointerUnmanagedCallingConventionInfo {
+public class FunctionPointerUnmanagedCallingConventionInfo extends CommentElement {
 
     private String name;
 

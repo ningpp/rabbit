@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class DestructorDeclarationInfo {
+public class DestructorDeclarationInfo extends CommentElement {
 
     private List<String> modifiers;
 

@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class VariableDeclaratorInfo {
+public class VariableDeclaratorInfo extends CommentElement {
 
     private String identifier;
 

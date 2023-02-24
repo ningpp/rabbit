@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class GlobalStatementInfo {
+public class GlobalStatementInfo extends CommentElement {
 
     private List<String> modifiers;
 

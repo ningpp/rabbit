@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class DiscardPatternInfo {
+public class DiscardPatternInfo extends CommentElement {
 
     private String underscoreToken;
 

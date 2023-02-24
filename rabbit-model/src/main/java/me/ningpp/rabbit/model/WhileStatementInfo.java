@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class WhileStatementInfo {
+public class WhileStatementInfo extends SourceLocation {
 
     private String whileKeyword;
 

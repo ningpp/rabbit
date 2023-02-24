@@ -2,7 +2,7 @@ package me.ningpp.rabbit.model;
 
 import java.util.List;
 
-public class NameEqualsInfo {
+public class NameEqualsInfo extends CommentElement {
 
     private IdentifierNameInfo name;
 
