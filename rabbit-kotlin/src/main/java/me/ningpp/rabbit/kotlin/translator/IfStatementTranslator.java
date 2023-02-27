@@ -53,7 +53,7 @@ public class IfStatementTranslator implements Translator<IfStatementInfo, String
                 formatElse = "} else";
                 if (elseStmt != null) {
                     if (elseStmt.getIfStatementInfo() == null
-                        || elseStmt.getBlockInfo() == null) {
+                        && elseStmt.getBlockInfo() == null) {
                         formatElse = "} else {";
                         appendElseEnd = true;
                     }

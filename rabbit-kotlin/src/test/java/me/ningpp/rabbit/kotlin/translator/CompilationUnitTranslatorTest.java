@@ -18,11 +18,11 @@ class CompilationUnitTranslatorTest {
     @Test
     void translateTest() {
         var compilationUnitInfo = JsonUtil.getBean(
-                CompilationUnitTranslatorTest.class.getResourceAsStream("NetworkSimplex.cs.json"),
+                CompilationUnitTranslatorTest.class.getResourceAsStream("Curve.cs.json"),
                 CompilationUnitInfo.class
         );
         assertNotNull(compilationUnitInfo);
-        String fileName = "NetworkSimplex.cs";
+        String fileName = "Curve.cs";
         CompilationUnitTranslator translator = CompilationUnitTranslator.getInstance();
         List<KotlinFile> kotlinFiles = translator.translate(
                 fileName,

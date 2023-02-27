@@ -24,14 +24,27 @@ public class WhileStatementTranslator implements Translator<WhileStatementInfo, 
         List<String> conditions = ExpressionTranslator.getInstance()
                 .translate(fileName, source.getCondition(), context);
 
+        String formatWhile;
+        boolean appendWhileEnd = false;
+        if (source.getStatement() != null && source.getStatement().getBlockInfo() != null) {
+            formatWhile = "while (%s)";
+        } else {
+            formatWhile = "while (%s) {";
+            appendWhileEnd = true;
+        }
+
         List<String> lines = new ArrayList<>();
         if (!conditions.isEmpty()) {
             lines.add(String.format(Locale.ROOT,
-                    "while (%s)", String.join("", conditions)));
+                    formatWhile, String.join("", conditions)));
         }
         lines.addAll(StatementTranslator
                 .getInstance().translate(fileName,
                         source.getStatement(), context));
+
+        if (appendWhileEnd) {
+            lines.add("}");
+        }
         return lines;
     }
 
