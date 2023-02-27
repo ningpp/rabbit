@@ -2,6 +2,7 @@ package me.ningpp.rabbit.kotlin.translator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
@@ -21,6 +22,14 @@ public class LockStatementTranslator implements Translator<LockStatementInfo, St
             return List.of();
         }
         List<String> lines = new ArrayList<>();
+        lines.add(String.format(Locale.ROOT,
+                "synchronized(%s) {",
+                String.join("", ExpressionTranslator.getInstance().translate(
+                        fileName, source.getExpression(), context
+                ))));
+        lines.addAll(StatementTranslator.getInstance()
+                .translateWithBrace(false, fileName, source.getStatement(), context));
+        lines.add("}");
         return lines;
     }
 
