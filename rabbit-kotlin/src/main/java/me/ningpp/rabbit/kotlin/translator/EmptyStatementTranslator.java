@@ -17,11 +17,8 @@ public class EmptyStatementTranslator implements Translator<EmptyStatementInfo, 
 
     @Override
     public List<String> translate(String fileName, EmptyStatementInfo source, TranslateContext context) {
-        if (source == null) {
-            return List.of();
-        }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        //do not produce an empty statement
+        return List.of();
     }
 
 }

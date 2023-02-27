@@ -15,13 +15,14 @@ public class ContinueStatementTranslator implements Translator<ContinueStatement
         return INSTANCE;
     }
 
+    private static final List<String> CONTINUE_VALUES = List.of("continue");
+
     @Override
     public List<String> translate(String fileName, ContinueStatementInfo source, TranslateContext context) {
         if (source == null) {
             return List.of();
         }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        return CONTINUE_VALUES;
     }
 
 }

@@ -15,13 +15,14 @@ public class BaseExpressionTranslator implements Translator<BaseExpressionInfo, 
         return INSTANCE;
     }
 
+    private static final List<String> SUPER_VALUES = List.of("super");
+
     @Override
     public List<String> translate(String fileName, BaseExpressionInfo source, TranslateContext context) {
         if (source == null) {
             return List.of();
         }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        return SUPER_VALUES;
     }
 
 }
