@@ -6,6 +6,7 @@ import java.util.List;
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
 import me.ningpp.rabbit.model.AssignmentExpressionInfo;
+import me.ningpp.rabbit.util.Constants;
 
 public class AssignmentExpressionTranslator implements Translator<AssignmentExpressionInfo, String> {
 
@@ -32,9 +33,17 @@ public class AssignmentExpressionTranslator implements Translator<AssignmentExpr
 
         if (!leftExpressions.isEmpty() && !rightExpressions.isEmpty()) {
             //TODO ??
-            lines.add(leftExpressions.get(0)
-                    + " " + source.getOperatorToken()
-                    + " " + rightExpressions.get(0));
+            if (rightExpressions.size() > 1) {
+                lines.add(leftExpressions.get(0)
+                        + " " + source.getOperatorToken()
+                        + " " + rightExpressions.get(0));
+                lines.addAll(rightExpressions.subList(1, rightExpressions.size()));
+            } else {
+                lines.add(leftExpressions.get(0)
+                        + " " + source.getOperatorToken()
+                        + " " + rightExpressions.get(0));
+            }
+
         }
 
         return lines;
