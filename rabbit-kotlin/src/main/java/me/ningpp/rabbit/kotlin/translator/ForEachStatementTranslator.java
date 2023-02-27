@@ -21,10 +21,18 @@ public class ForEachStatementTranslator implements Translator<ForEachStatementIn
         if (source == null) {
             return List.of();
         }
+        String formatForeach;
+        boolean appendForeachEnd = false;
+        if (source.getStatement() != null && source.getStatement().getBlockInfo() != null) {
+            formatForeach = "for (%s in %s)";
+        } else {
+            formatForeach = "for (%s in %s) {";
+            appendForeachEnd = true;
+        }
         List<String> lines = new ArrayList<>();
         lines.add(String.format(
                 Locale.ROOT,
-                "for (%s in %s)",
+                formatForeach,
                 source.getIdentifier(),
                 String.join(
                     "",
@@ -36,6 +44,9 @@ public class ForEachStatementTranslator implements Translator<ForEachStatementIn
         lines.addAll(StatementTranslator.getInstance().translate(
                 fileName, source.getStatement(), context
         ));
+        if (appendForeachEnd) {
+            lines.add("}");
+        }
         return lines;
     }
 

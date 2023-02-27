@@ -22,7 +22,7 @@ public class ObjectCreationExpressionTranslator implements Translator<ObjectCrea
             return List.of();
         }
         return List.of(String.format(Locale.ROOT,
-                "new %s(%s)",
+                "%s(%s)",
                 TypeInfoTranlator.translate(source.getType(), context),
                 String.join(", ",
                         ArgumentListTranslator.getInstance().translate(
