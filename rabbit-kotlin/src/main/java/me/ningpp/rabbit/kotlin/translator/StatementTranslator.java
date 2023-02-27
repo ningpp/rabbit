@@ -17,12 +17,16 @@ public class StatementTranslator implements Translator<StatementInfo, String> {
 
     @Override
     public List<String> translate(String fileName, StatementInfo source, TranslateContext context) {
+        return translateWithBrace(true, fileName, source, context);
+    }
+
+    public List<String> translateWithBrace(boolean withBrace, String fileName, StatementInfo source, TranslateContext context) {
         if (source == null) {
             return List.of();
         }
         List<String> lines = new ArrayList<>();
 
-        lines.addAll(BlockTranslator.getInstance().translate(fileName, source.getBlockInfo(), context));
+        lines.addAll(BlockTranslator.getInstance().translateWithBrace(withBrace, fileName, source.getBlockInfo(), context));
         lines.addAll(BreakStatementTranslator.getInstance().translate(fileName, source.getBreakStatementInfo(), context));
         lines.addAll(CheckedStatementTranslator.getInstance().translate(fileName, source.getCheckedStatementInfo(), context));
         lines.addAll(ContinueStatementTranslator.getInstance().translate(fileName, source.getContinueStatementInfo(), context));
