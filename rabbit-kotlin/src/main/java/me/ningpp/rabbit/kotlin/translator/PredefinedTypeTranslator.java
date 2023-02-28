@@ -20,8 +20,7 @@ public class PredefinedTypeTranslator implements Translator<PredefinedTypeInfo, 
         if (source == null) {
             return List.of();
         }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        return List.of(source.getKeyword());
     }
 
 }
