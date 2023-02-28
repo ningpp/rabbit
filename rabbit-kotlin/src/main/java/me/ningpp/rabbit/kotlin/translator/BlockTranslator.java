@@ -6,6 +6,7 @@ import java.util.List;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
+import me.ningpp.rabbit.kotlin.util.KotlinUtil;
 import me.ningpp.rabbit.model.BlockInfo;
 
 public class BlockTranslator implements Translator<BlockInfo, String> {
@@ -26,12 +27,6 @@ public class BlockTranslator implements Translator<BlockInfo, String> {
             return List.of();
         }
         List<String> lines = new ArrayList<>();
-
-        if (source.getComments() != null) {
-            for (var comment : source.getComments()) {
-                Collections.addAll(lines, comment.split("\\n"));
-            }
-        }
 
         if (withBrace) {
             lines.add("{");

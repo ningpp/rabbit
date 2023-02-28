@@ -5,6 +5,7 @@ import java.util.List;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
+import me.ningpp.rabbit.exception.UnsupportedSyntaxException;
 import me.ningpp.rabbit.model.StackAllocArrayCreationExpressionInfo;
 
 public class StackAllocArrayCreationExpressionTranslator implements Translator<StackAllocArrayCreationExpressionInfo, String> {
@@ -17,11 +18,10 @@ public class StackAllocArrayCreationExpressionTranslator implements Translator<S
 
     @Override
     public List<String> translate(String fileName, StackAllocArrayCreationExpressionInfo source, TranslateContext context) {
-        if (source == null) {
-            return List.of();
+        if (source != null && context.isThrowUnsupportedSyntaxException()) {
+            throw new UnsupportedSyntaxException();
         }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        return List.of();
     }
 
 }

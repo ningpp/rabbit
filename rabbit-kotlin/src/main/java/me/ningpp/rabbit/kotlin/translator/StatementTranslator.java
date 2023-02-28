@@ -5,6 +5,7 @@ import java.util.List;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
+import me.ningpp.rabbit.kotlin.util.KotlinUtil;
 import me.ningpp.rabbit.model.StatementInfo;
 
 public class StatementTranslator implements Translator<StatementInfo, String> {

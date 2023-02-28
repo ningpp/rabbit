@@ -26,6 +26,7 @@ public class MethodDeclarationTranslator implements Translator<MethodDeclaration
             return List.of();
         }
         KotlinFunction.Builder builder = KotlinFunction.newMultiLineFunction(source.getIdentifier());
+        builder.withComments(KotlinUtil.parseComments(source.getComments()));
 
         KotlinUtil.addByCSharpModifiers(builder, source.getModifiers());
 

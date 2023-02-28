@@ -24,6 +24,7 @@ public class ClassDeclarationTranslator implements Translator<ClassDeclarationIn
             return List.of();
         }
         KotlinType.Builder classBuilder = KotlinType.newClass(source.getIdentifier());
+        classBuilder.withComments(KotlinUtil.parseComments(source.getComments()));
         KotlinUtil.addByCSharpModifiers(classBuilder, source.getModifiers());
 
         KotlinUtil.addMembers(classBuilder,

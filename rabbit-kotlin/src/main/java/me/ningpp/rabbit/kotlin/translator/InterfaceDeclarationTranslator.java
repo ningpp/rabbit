@@ -24,6 +24,7 @@ public class InterfaceDeclarationTranslator implements Translator<InterfaceDecla
             return List.of();
         }
         KotlinType.Builder builder = KotlinType.newInterface(source.getIdentifier());
+        builder.withComments(KotlinUtil.parseComments(source.getComments()));
         KotlinUtil.addByCSharpModifiers(builder, source.getModifiers());
 
         List<String> superTypes = BaseListTranslator.getInstance().translate(fileName,

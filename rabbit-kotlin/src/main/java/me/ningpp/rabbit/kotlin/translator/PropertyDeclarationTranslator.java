@@ -30,7 +30,9 @@ public class PropertyDeclarationTranslator implements Translator<PropertyDeclara
                 .withDataType(TypeInfoTranlator
                         .translate(source.getType(), context));
         KotlinUtil.addByCSharpModifiers(builder, source.getModifiers());
+        builder.withComments(KotlinUtil.parseComments(source.getComments()));
         propertySpecs.add(builder.build());
+        //TODO support getter setter
         return propertySpecs;
     }
 }

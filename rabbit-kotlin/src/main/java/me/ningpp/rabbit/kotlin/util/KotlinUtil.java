@@ -1,7 +1,11 @@
 package me.ningpp.rabbit.kotlin.util;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+import me.ningpp.rabbit.util.Constants;
+import org.apache.commons.lang3.StringUtils;
 import org.mybatis.generator.api.dom.kotlin.KotlinArg;
 import org.mybatis.generator.api.dom.kotlin.KotlinFunction;
 import org.mybatis.generator.api.dom.kotlin.KotlinNamedItem;
@@ -17,6 +21,19 @@ import me.ningpp.rabbit.model.MemberDeclarationInfo;
 import me.ningpp.rabbit.model.ParameterListInfo;
 
 public class KotlinUtil {
+
+    public static List<String> parseComments(List<String> comments) {
+        List<String> lines = new ArrayList<>();
+        if (comments != null) {
+            for (String comment : comments) {
+                if (StringUtils.isEmpty(comment)) {
+                    continue;
+                }
+                Collections.addAll(lines, comment.split(Constants.DEFAULT_LINE_SEPARATOR));
+            }
+        }
+        return lines;
+    }
 
     public static void addParameters(
             KotlinFunction.Builder builder,

@@ -5,6 +5,7 @@ import java.util.List;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
+import me.ningpp.rabbit.exception.UnsupportedSyntaxException;
 import me.ningpp.rabbit.model.WithExpressionInfo;
 
 public class WithExpressionTranslator implements Translator<WithExpressionInfo, String> {
@@ -17,11 +18,10 @@ public class WithExpressionTranslator implements Translator<WithExpressionInfo, 
 
     @Override
     public List<String> translate(String fileName, WithExpressionInfo source, TranslateContext context) {
-        if (source == null) {
-            return List.of();
+        if (source != null && context.isThrowUnsupportedSyntaxException()) {
+            throw new UnsupportedSyntaxException();
         }
-        List<String> lines = new ArrayList<>();
-        return lines;
+        return List.of();
     }
 
 }
