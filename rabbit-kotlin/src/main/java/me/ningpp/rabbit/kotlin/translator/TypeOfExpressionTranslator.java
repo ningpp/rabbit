@@ -2,6 +2,7 @@ package me.ningpp.rabbit.kotlin.translator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import me.ningpp.rabbit.TranslateContext;
 import me.ningpp.rabbit.Translator;
@@ -22,7 +23,11 @@ public class TypeOfExpressionTranslator implements Translator<TypeOfExpressionIn
         }
         //TODO
         List<String> lines = new ArrayList<>();
-        return lines;
+        return List.of(String.format(
+                Locale.ROOT,
+                "typeOf(%s)",
+                TypeInfoTranlator.translate(source.getType(), context)
+        ));
     }
 
 }
